@@ -60,8 +60,8 @@ class Chat:
         self.message_id = msg['message_id']
 
         self.messages = {
-            'start':'🤖 Hello, '+ self.user_name +'!\n\n'
-                    '📩 Send me:\n\n'
+            'start':'😎 Hello, '+ self.user_name +'!\n\n'
+                    '🤖 Bot Commands:\n\n'
                     '"*/music* _song name_"  or\n'
                     '"*/music* _musician name - song name_"\n\n'
                     'to order some music. 🎶',
@@ -109,14 +109,14 @@ class Chat:
             file_name = file_name.replace('"', '')
 
             self.send_message(f"🎵 {Music.get_title(self, result)}\n🔗 {Music.get_link(self, result)}")
-            downloading_message = self.send_message('⬇️ Downloading... \n_(this may take a while.)_')
+            downloading_message = self.send_message('⬇️ Downloading your Song... \n_(this may take a while.)_')
 
             Music.download_music(self, file_name, Music.get_link(self, result))
 
             try:
                 self.send_audio(file_name)
                 self.delete_message(downloading_message)
-                self.send_message('✅ Sucess!')
+                self.send_message('✅ Successfully Uploaded')
                 print ("\nSucess!\n")
             except:
                 print("\nError")
