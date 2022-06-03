@@ -59,14 +59,21 @@ class Chat:
         self.user_name = msg['from']['first_name']
         self.message_id = msg['message_id']
 
+        @Client.on_message(Filters.command(["help"]))
+        async def start(client, message):
+	Mazeen = InlineKeyboardMarkup([
+		[InlineKeyboardButton("Script Bot", url="https://github.com/MZN-KING/Tg-MusicDownloaderBot")]
+                ])
+
+
         self.messages = {
             'start':'😎 Hello, '+ self.user_name +'!\n\n'
                     '🤖 Bot Commands:\n'
                     '╭─────────────────────╮'
                     '│• /music *song name*"  or\n'
                     '│• /music *musician name - song name*"\n'
-                    '╰─────────•◈•─────────╯'
-                    '',
+                    '╰─────────•◈•─────────╯\n\n'
+                    'Join Our Channel @mzneditez. 🤩',
             
             'spotify_input_error':"‼️ *Oops! The bot doesn't support Spotify links!*\n"
                     'Try: "*/music* _song name_"\n'
