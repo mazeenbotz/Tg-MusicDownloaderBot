@@ -62,9 +62,11 @@ class Chat:
         self.messages = {
             'start':'😎 Hello, '+ self.user_name +'!\n\n'
                     '🤖 Bot Commands:\n'
-                    '"*/music* _song name_"  or\n'
-                    '"*/music* _musician name - song name_"\n\n'
-                    'Join Our Channel @mznbots. 🤩',
+                    '╭─────────────────────╮'
+                    '│• /music *song name*"  or\n'
+                    '│• /music *musician name - song name*"\n'
+                    '╰─────────•◈•─────────╯'
+                    '',
             
             'spotify_input_error':"‼️ *Oops! The bot doesn't support Spotify links!*\n"
                     'Try: "*/music* _song name_"\n'
