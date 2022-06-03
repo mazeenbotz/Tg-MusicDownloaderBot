@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="https://github.com/henriqueclaranhan/telegram-music-downloader-bot/blob/master/icon.png" width="190">
+  <img src="https://user-images.githubusercontent.com/106764948/171790496-f30d172f-e98c-4d09-9fb5-c5ed0336eb8a.png" width="190">
   <h1>Telegram Music Downloader Bot</h1>
-  A Telegram bot to download music from YouTube. Click <a href="https://t.me/TLMusicDownloader_bot">@TLMusicDownloader_bot</a> to use.
+  A Telegram bot to download music from YouTube. Click <a href="http://t.me/MZN_MusicDownloaderBot">@MZN_MusicDownloaderBot</a> to use.
 </div>
 
 ## :arrow_down: Installation
@@ -10,13 +10,13 @@ To get a local copy installed and working, follow these steps:
  - Clone this repository
 
     ```console
-    git clone https://github.com/henriqueclaranhan/telegram-music-downloader-bot.git
+    git clone https://github.com/MZN-KING/Tg-MusicDownloaderBot
     ```
     
  - Enter the project folder
 
     ```sh
-    cd telegram-music-downloader-bot
+    cd Tg-MusicDownloaderBot
     ```
 
 ### 📦 Install dependencies
@@ -55,11 +55,9 @@ To get a local copy installed and working, follow these steps:
 
 ## 🟪 Deploy on Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/henriqueclaranhan/telegram-music-downloader-bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fhansakabro.tk%2F&template=https%3A%2F%2Fgithub.com%2FMZN-KING%2FTg-MusicDownloaderBot)
 
 
-## 📷 Screenshot
+## 😈 Support Channel
 
-<img src="https://user-images.githubusercontent.com/58452863/134260965-005e32f3-27aa-435e-81c9-70b50cf1a8f1.png" alt="Screenshot" width="305" height="700">
-
-
+[🤞Telegram Channel](https://t.me/mazeenbots)
