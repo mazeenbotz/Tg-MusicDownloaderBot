@@ -62,9 +62,9 @@ class Chat:
         self.messages = {
             'start':'😎 Hello, '+ self.user_name +'!\n\n'
                     '🤖 Bot Commands:\n'
-                    '• /music *song name*"  or\n'
-                    '• /music *musician name - song name*"\n\n'
-                    'Join Our Channel : @mzneditez',
+                    '• /music *song name* or\n'
+                    '• /music *musician name - song name*\n\n'
+                    '_Join Our Channel : @mzneditez_',
             
             'spotify_input_error':"‼️ *Oops! The bot doesn't support Spotify links!*\n"
                     'Try: "*/music* _song name_"\n'
@@ -108,7 +108,7 @@ class Chat:
             file_name = Music.get_title(self, result) +' - @MZN_MusicDownloaderBot '+str(randint(0,999999))+'.mp3'
             file_name = file_name.replace('"', '')
 
-            self.send_message(f"🎵 Song: {Music.get_title(self, result)}\n🔗 Link: {Music.get_link(self, result)}")
+            self.send_message(f"🎶 Music: {Music.get_title(self, result)}\n🔗 Link: {Music.get_link(self, result)}")
             downloading_message = self.send_message('⬇️ Downloading your Song...')
 
             Music.download_music(self, file_name, Music.get_link(self, result))
