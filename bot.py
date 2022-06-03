@@ -64,7 +64,7 @@ class Chat:
                     '🤖 Bot Commands:\n\n'
                     '"*/music* _song name_"  or\n'
                     '"*/music* _musician name - song name_"\n\n'
-                    'to order some music. 🎶',
+                    'Join Our Channel @mznbots. 🤩',
             
             'spotify_input_error':"‼️ *Oops! The bot doesn't support Spotify links!*\n"
                     'Try: "*/music* _song name_"\n'
@@ -108,15 +108,15 @@ class Chat:
             file_name = Music.get_title(self, result) +' - @TLMusicDownloader_bot '+str(randint(0,999999))+'.mp3'
             file_name = file_name.replace('"', '')
 
-            self.send_message(f"🎵 {Music.get_title(self, result)}\n🔗 {Music.get_link(self, result)}")
-            downloading_message = self.send_message('⬇️ Downloading your Song... \n_(this may take a while.)_')
+            self.send_message(f"🎵 Song: {Music.get_title(self, result)}\n🔗 Link: {Music.get_link(self, result)}")
+            downloading_message = self.send_message('⬇️ Downloading your Song...')
 
             Music.download_music(self, file_name, Music.get_link(self, result))
 
             try:
                 self.send_audio(file_name)
                 self.delete_message(downloading_message)
-                self.send_message('✅ Successfully Uploaded')
+                self.send_message('✅ Successfully Uploaded!')
                 print ("\nSucess!\n")
             except:
                 print("\nError")
